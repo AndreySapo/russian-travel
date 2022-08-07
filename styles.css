@@ -1,17 +1,18 @@
 @import url(variables.css);
 
-body{
+body {
   background-color: var(--bg-dark);
+  color: var(--text-color);
 }
 
-.page{
+.page {
   margin: 0 auto;
-  max-width: 1184px;
+  max-width: 1280px;
   font-family: 'Inter', Arial, sans-serif;
   border: 1px solid red;
 }
 
-.header{
+.header {
   display: flex;
   column-gap: 18px;
   border: 1px solid red;
@@ -25,4 +26,48 @@ body{
 
 .header__lang-link {
   color: var(--link-color);
+}
+
+.content {
+  max-width: 984px;
+  margin: 0 auto;
+}
+
+.lead {
+  border: 1px solid red;
+}
+
+.lead__title {
+  max-width: 720px;
+  margin: 0 auto 32px;
+  padding: 0;
+  text-align: center;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+}
+
+.lead__subtitle {
+  max-width: 640px;
+  margin: 0 auto 64px;
+  padding: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.lead__image {
+  width: 100%;
+  display: block;
+}
+
+.lead__caption {
+  margin: 8px 0 0 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
