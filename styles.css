@@ -20,11 +20,9 @@ body{
 }
 
 .header__logo {
-  border: 1px solid red;
   flex-basis: 1107px;
 }
 
 .header__lang-link {
   color: var(--link-color);
-  border: 1px solid red;
 }
