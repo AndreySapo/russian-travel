@@ -1,0 +1,30 @@
+@import url(variables.css);
+
+body{
+  background-color: var(--bg-dark);
+}
+
+.page{
+  margin: 0 auto;
+  max-width: 1184px;
+  font-family: 'Inter', Arial, sans-serif;
+  border: 1px solid red;
+}
+
+.header{
+  display: flex;
+  column-gap: 18px;
+  border: 1px solid red;
+  margin: 28px 48px 56px;
+  align-items: center;
+}
+
+.header__logo {
+  border: 1px solid red;
+  flex-basis: 1107px;
+}
+
+.header__lang-link {
+  color: var(--link-color);
+  border: 1px solid red;
+}
