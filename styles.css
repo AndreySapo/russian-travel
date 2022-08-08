@@ -150,10 +150,19 @@ body {
 
 .place {
   width: 100%;
+  display: grid;
   grid-template-columns: 460px 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 40px;
-  grid-row-gap: 48px;
+  grid-template-areas:
+    "title website"
+    "image paragraph"
+    "image paragraph";
+  gap: 48px 40px;
+  border: 1px solid red;
+  margin-bottom: 80px;
+}
+
+.place:last-child {
+  margin-bottom: 0;
 }
 
 .place__title {
@@ -162,14 +171,23 @@ body {
   line-height: 76px;
   margin: 0;
   padding: 0;
+  border: 1px solid red;
+  grid-area: title;
 }
 
 .place__image {
   width: 460px;
   height: 460px;
+  border: 1px solid red;
+  display: block;
+  grid-area: image;
 }
 
-.place__website {}
+.place__website {
+  border: 1px solid red;
+  align-self: end;
+  grid-area: website;
+}
 
 .place__url-heading {
   color: #AAAAAA;
@@ -193,9 +211,19 @@ body {
 }
 
 .place__paragraph {
+
+  border: 1px solid red;
+}
+
+.place__paragraph-text {
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 163%;
   margin: 0;
   padding: 0;
+}
+
+.place__paragraph-text:first-child {
+  margin-bottom: 26px;
 }
