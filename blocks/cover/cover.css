@@ -1,0 +1,7 @@
+.cover {
+  grid-area: cover;
+  display: grid;
+  max-width: 1184px;
+  width: 100%;
+  justify-items: center;
+}
