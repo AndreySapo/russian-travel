@@ -1,9 +1,13 @@
 .header__lang-link {
   color: var(--link-color);
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 400;
   font-size: 24px;
   line-height: 117%;
+}
+
+.header__lang-link:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 767px) {
