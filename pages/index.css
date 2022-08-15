@@ -60,11 +60,128 @@
 @import url(../blocks/place/__paragraph/place__paragraph.css);
 
 /* стили блока cover */
-/* @import url(../blocks/cover/cover.css);
-@import url(../blocks/cover/__background/cover__background.css);
-@import url(../blocks/cover/__overlay/cover__overlay.css);
-@import url(../blocks/cover/__title/cover__title.css);
-@import url(../blocks/cover/__subtitle/cover__subtitle.css); */
+.cover {
+  grid-area: cover;
+  max-width: 1184px;
+  width: 100%;
+  min-height: 740px;
+}
+
+@media screen and (max-width: 1279px) {
+  .cover {
+    min-height: 640px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .cover {
+    min-height: 480px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cover {
+    min-height: 200px;
+  }
+}
+
+.cover__overlay {
+  text-decoration: none;
+}
+
+.cover__background {
+  display: grid;
+  grid-template-areas: "title""subtitle";
+  gap: 32px;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background-image: url(../images/cover-trains.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;/*в прошлой итерации здесь было contain. прошу объяснить,
+  почему оно здесь не подходит? с этим свойством картинка будет резиновой на всех
+  разрешениях при том же качестве. а раз блок ограничен в размерах, то качество
+  картинки не изменится на бОльших разрешениях мониторов*/
+  text-align: center;
+  min-height: 740px;
+  position: relative;
+}
+
+.cover__background::before {
+  content: '';
+  position: absolute;
+  opacity: .3;
+  background-color: #2a2c2f;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity .1s linear;
+}
+
+.cover__background:hover::before {
+  opacity: .8;
+}
+
+@media screen and (max-width: 1279px) {
+  .cover__background {
+    min-height: 640px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .cover__background {
+    min-height: 480px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cover__background {
+    min-height: 200px;
+  }
+}
+
+.cover__title {
+  grid-area: title;
+  max-width: 560px;
+  color: var(--link-color);
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 106%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .cover__title {
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 109%;
+  }
+}
+
+.cover__subtitle {
+  grid-area: subtitle;
+  max-width: 360px;
+  color: var(--link-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 122%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .cover__subtitle {
+    max-width: 288px;
+    font-size: 14px;
+    line-height: 114%;
+  }
+}
 
 /* стили блока footer */
 /* @import url(../blocks/footer/footer.css);
