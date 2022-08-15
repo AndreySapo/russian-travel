@@ -1,17 +1,21 @@
-.footer__links {
-	max-width: 465px;
-	min-width: 186px;
-	width: 100%;
-	display: grid;
-	grid-template-columns: repeat(5, max-content);
-	gap: 18px;
+.footer__link {
+  color: var(--link-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 112%;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  transition: opacity .1s linear;
+}
+
+.footer__link:hover {
+  opacity: .8;
 }
 
 @media screen and (max-width: 767px) {
-	.footer__links {
-		grid-template-rows: repeat(5, max-content);
-		grid-template-columns: 1fr;
-		gap: 32px;
-		margin-bottom: 48px;
-	}
+  .footer__link {
+    font-size: 24px;
+    line-height: 100%;
+  }
 }
