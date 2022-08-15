@@ -1,10 +1,54 @@
 .cover__background {
+  display: grid;
+  grid-template-areas: "title""subtitle";
+  gap: 32px;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
   background-image: url(../../../images/cover-trains.jpg);
-  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
-  padding-top: 62.5%;
-  width: 100%;
-  z-index: 0;
-  grid-column: 1/2;
-  grid-row: 1/2;
+  background-size: cover;/*в прошлой итерации здесь было contain. прошу объяснить,
+  почему оно здесь не подходит? с этим свойством картинка будет резиновой на всех
+  разрешениях при том же качестве. а раз блок ограничен в размерах, то качество
+  картинки не изменится на бОльших разрешениях мониторов*/
+  text-align: center;
+  min-height: 740px;
+  position: relative;
+}
+
+.cover__background::before {
+  content: '';
+  position: absolute;
+  opacity: .3;
+  background-color: #2a2c2f;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity .1s linear;
+}
+
+.cover__background:hover::before {
+  opacity: .8;
+}
+
+@media screen and (max-width: 1279px) {
+  .cover__background {
+    min-height: 640px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .cover__background {
+    min-height: 480px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cover__background {
+    min-height: 200px;
+    gap: 16px;
+  }
 }

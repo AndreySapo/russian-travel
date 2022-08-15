@@ -1,20 +1,18 @@
 .header__lang-link {
   color: var(--link-color);
-  text-decoration: underline;
-  margin: 0 18px 0 0;
+  text-decoration: none;
   font-weight: 400;
   font-size: 24px;
   line-height: 117%;
 }
 
-@media screen and (max-width: 424px) {
+.header__lang-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
   .header__lang-link {
-    font-weight: 400;
     font-size: 18px;
     line-height: 111%;
   }
-}
-
-.header__lang-link:last-child {
-  margin-right: 0;
 }
