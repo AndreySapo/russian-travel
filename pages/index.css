@@ -66,6 +66,7 @@
 
 /* стили блока footer */
 @import url(../blocks/footer/footer.css);
+/* Опечатку нужно подправить, структура содержит селектор footer__link, в названии папки и файла нужно подправить опечатку */
 @import url(../blocks/footer/__links/footer__links.css);
 @import url(../blocks/footer/__links-list/footer__links-list.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);

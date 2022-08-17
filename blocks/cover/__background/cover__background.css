@@ -1,3 +1,4 @@
+/* Стили необходимо перенести в .cover__overlay */
 .cover__background {
   display: grid;
   grid-template-areas: "title""subtitle";
@@ -9,10 +10,7 @@
   background-image: url(../../../images/cover-trains.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;/*в прошлой итерации здесь было contain. прошу объяснить,
-  почему оно здесь не подходит? с этим свойством картинка будет резиновой на всех
-  разрешениях при том же качестве. а раз блок ограничен в размерах, то качество
-  картинки не изменится на бОльших разрешениях мониторов*/
+  background-size: cover;
   text-align: center;
   min-height: 740px;
   position: relative;

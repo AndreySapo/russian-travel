@@ -6,6 +6,7 @@
   line-height: 117%;
 }
 
+/* Так же необходимо изменять прозрачность */
 .header__lang-link:hover {
   text-decoration: underline;
 }
