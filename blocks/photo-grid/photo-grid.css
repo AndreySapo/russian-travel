@@ -1,3 +1,4 @@
 .photo-grid {
+  grid-area: photo-grid;
   max-width: 1184px;
 }

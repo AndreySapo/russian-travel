@@ -22,7 +22,7 @@
 
 @media screen and (max-width: 767px) {
   .place {
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-areas: "title""url""img""paragraphs";
     gap: 32px;
   }

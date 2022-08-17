@@ -3,3 +3,17 @@
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 767px) {
+  .intro__list {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .intro__list {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
